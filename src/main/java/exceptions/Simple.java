@@ -12,6 +12,10 @@ public class Simple {
   }
 
   public static void main(String[] args) {
-    System.out.println("The text is " + getText());
+    try {
+      System.out.println("The text is " + getText());
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 }
